@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+</head>
+<body>
+    <!--頁首-->
+    <div data-role="page" id="page1" data-theme="b">
+        <div data-role="header" data-position="fixed">
+            <h1>會員註冊頁面</h1>
+            <a href="#page2" data-icon="arrow-r" class="ui-btn-right"
+               data-transition="flow">
+                Next
+            </a>
+            <a href="#page1" data-icon="home" class="ui-btn-left">
+                home
+            </a>
+        </div>
+    
+        <!--頁中-->
+        <div data-role="content"  class="ui-content" >
+            <form method="post" action="http://jsapplab.site88.net/echo.php">
+
+                <div data-role="fieldcontain">
+                    <label for="txtInputText">請輸入姓名:</label>
+                    <input type="text" name="txtInputText" id="txtInputText" value="" placeholder="請輸入姓名" />
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="rngScore">你的E-mail:</label>
+                    <input type="email" name="useremail" id="useremail" placeholder="請輸入E-mail" min="0" max="100">
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="rngScore">你的電話:</label>
+                    <input type="tel" name="username" id="username" placeholder="請輸入電話" min="0" max="100">
+                </div>
+
+                <fieldset data-role="controlgroup" >
+                    <legend>你的性別:</legend>
+          
+
+                    <input type="radio" name="sex" id="nan" value="男">
+                    <label for="nan">男</label>
+
+                    <input type="radio" name="sex" id="nv" value="女">
+                    <label for="nv">女</label>   
+
+                </fieldset>
+
+                <div data-role="fieldcontain">
+                    <label for="rngScore">英文能力:</label>
+                    <input type="range" name="rngScore" id="rngScore" value="60" min="0" max="100" />
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="rngScore">程式能力:</label>
+                    <input type="range" name="rngScore" id="rngScore" value="60" min="0" max="100">
+                </div>
+
+
+
+                <div data-role="fieldcontain" data-inline="true">
+                    <label for="sltOnOff">婚姻狀況:</label>
+                    <select name="sltOnOff" id="sltOnOff" data-role="slider">
+                        <option value="off">未婚</option>
+                        <option value="on">已婚</option>
+                    </select>
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="sltOnOff2">能否接受外派:</label>
+                    <select name="sltOnOff2" id="sltOnOff2" data-role="slider">
+                        <option vlalue="off">我接受</option>
+                        <option vlalue="on">不接受</option>
+                    </select>
+                </div>
+
+
+
+                <fieldset data-role="controlgroup">
+                    <legend>擅長的程式語言</legend>
+                    <label><input type="checkbox" name="chkReading">C++</label>
+                    <input type="checkbox" name="chkMusic" id="chkMusic" /><label for="chkMusic">ASP.NET</label>
+                    <input type="checkbox" name="chkSport" id="chkSport" /><label for="chkSport">JAVA</label>
+                </fieldset>
+
+                <div data-role="fieldcontain">
+                    <label for="txtTextArea">你希望得到的待遇是:</label>
+                    <textarea name="txtTextArea" id="txtTextArea"></textarea>
+                </div>
+
+                <div data-role="content">
+                    <div data-role="collapsible">
+                        <h3>同意條款</h3>
+                        <p>
+                            會員承諾絕不為任何非法目的或以任何非法方式使用本服務，並承諾遵守中華民國相關法規及一切使用網際網路之國際慣例。會員若係中華民國以外之使用者，並同意遵守所屬國家或地域之法令。會員同意並保證不得利用本服務從事侵害他人權益或違法之行為，包括但不限於：
+                            公布或傳送任何誹謗、侮辱、具威脅性、攻擊性、不雅、猥褻、不實、違反公共秩序或善良風俗或其他不法之文字、圖片或任何形式的檔案
+                            侵害或毀損博客來或他人名譽、隱私權、營業秘密、商標權、著作權、專利權、其他智慧財產權及其他權利
+                            違反依法律或契約所應負之保密義務
+                            冒用他人名義使用本服務
+                            傳輸或散佈電腦病毒
+                            從事未經博客來事前授權的商業行為
+                            刊載、傳輸、發送垃圾郵件、連鎖信、違法或未經博客來許可之多層次傳銷訊息及廣告等；或儲存任何侵害他人智慧財產權或違反法令之資料
+                            對本服務其他用戶或第三人產生困擾、不悅或違反一般網路禮節致生反感之行為
+                            其他不符本服務所提供的使用目的之行為或博客來有正當理由認為不適當之行為
+                        </p>
+                    </div>
+                </div>
+
+                <a href="www.google.com" data-role="button" data-icon="check">
+                    我同意
+                </a>
+
+
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <input type="submit" name="btnok" value="送出">
+                    </div>
+                    <div class="ui-block-b">
+                        <input type="submit" name="btnCancel" value="重填">
+                    </div>
+                </div>
+
+            </form>
+
+
+            <!--頁尾-->
+            <div data-role="footer" data-position="fixed">
+                <h1>請詳細填寫資料</h1>
+                <div data-role="navbar" class="ui-body-c">
+                    <ul>
+                        <li>
+                            <a href="http://www.moke.tw/wordpress/computer/web/432"
+                               data-icon="grid">jquery1</a>
+                        </li>
+                        <li>
+                            <a href="#jump" data-icon="star">jquery2</a>
+                        </li>
+                        <li>
+                            <a href="http://www.w3schools.com/jquerymobile/tryit.asp?filename=tryjqmob_themes_dialog"
+                               data-icon="gear" class="ui-btn-active ui-state-persist">jquery3</a>
+                        </li>
+                        <li>
+                            <a href="#" data-icon="arrow-r">jquery4</a>
+                        </li>
+                        <li>
+                            <a href="#" data-icon="search">Button 5</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+</body>
+</html>
+
